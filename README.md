@@ -317,7 +317,7 @@ db.listings.aggregate([
 A small number of hosts hold a significant amount of the Airbnb market in Porto, these are most likely the "superhosts" and the ones under a corporation, basically a hotel chain
 7. **find the average review_scores_rating per neighborhood, and only show those that are 4 or above, sorted in descending order of rating**
 ```shell
-ipv2004> db.listings.aggregate([
+ db.listings.aggregate(
 ...   {
 ...     $group: {
 ...       _id: "$neighbourhood", // Group by neighbourhood
